@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', 'Fantasy';
+}
+
+body {
+	background: #081b29;
+	color: #ffffff;
+}
+
+.logo {
+	font-family: 'Fantasy';
+    font-size: 25px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	display: flex;
+	background: #3cdfff;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.navbar a {
+     font-size: 18px;
+     font-weight: 400;
+     text-decoration: none;
+     color: #ffffff;
+     margin-left: 35px;
+     transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:active  {
+	color: #081b55;
+	font-size: 24px;
+}
+
+.btnbox {
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.home {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+}
+.home-content {
+	max-width: 600px;
+}
+
+.home-content h1 {
+	font-size: 56px;
+	font-weight: 600;
+	color: #3cdfff;
+}
+
+.home-content h2 {
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+.home-content h3 {
+	font-size: 35px
+	font-weight: 500;
+	margin: 20px 0px 40px;
+}
+
+.home-content .btn-box {
+	padding: 1;
+	display: flex;
+	justify-content: space-between;
+	width: 345px;
+	height: 50px;
+}
+
+.btn-box a {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 100%;
+	background: #081b29;
+	border: 2px solid #3cdfff;
+	border-radius:  8px;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	z-index: 1;
+}
+
+.btn-box a:nth-child(2) {
+	background: transparent;
+	color: #ffffff
+}
+
+.btn-box a:nth-child(2):hover {
+	color: #ffffff;
+}
+
+.btn-box a:nth-child(2):before {
+	background: #3cdfff;
+}
+
+.btn-box a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #3cdfff;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+	width: 100%;
+	
+}
